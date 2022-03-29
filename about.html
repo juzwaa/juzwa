@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="about.css">
+    <title>About Page</title>
+</head>
+<body>
+    <section class="showcase">
+        <header>
+            <h2 class="logo">jozhualenard</h2>
+            <div class="toggle"></div>
+        </header>
+
+        <video src="./images/video.mp4" muted loop autoplay></video>
+        <div class="overlay"></div>
+        
+        <div class="container">
+            <div class="sub">
+            <div class="profile">
+                <img src="./images/dp.png" height="200px" alt="">
+                <div class="name">Jozhua Lenard Huertas</div>
+                <div class="part">Developer | Designer</div>
+                <div class="about">This is where my story begins. I am a young developer from Bayambang, Pangasinan. I have good knowledge in programming. I program with Java Script, C++, Python, HTML, and CSS. I also have a good background in graphic designing and web developing. I have both the hard skills and soft skills that a programmer needs. I would be delightful to be part of your team.</div>
+            </div>
+            </div>
+        </div>
+        
+        
+    </section>
+
+    <div class="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            
+        </ul>
+    </div>
+
+    <script>
+        const menuToggle = document.querySelector('.toggle')
+        const showcase = document.querySelector('.showcase')
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active')
+            showcase.classList.toggle('active')
+        })
+    </script>
+</body>
+</html>
